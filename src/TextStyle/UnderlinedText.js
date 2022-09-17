@@ -1,12 +1,12 @@
-// Created by Namish Kumar (2022)
-export class Text {
-    constructor(target) {
-         this.target = target;
-    }
-    text;
-    id;
-    style;
-    create() {
+//Created by Namish Kumar in 2022
+
+export class UnderlinedText{
+      constructor(target) {
+         this.target = target
+      }
+      id;
+      text;
+      create() {
         const noStyle = this.style === undefined || this.style.length < 1 || this.style === "";
         if(noStyle) {
             this.style = `
@@ -17,9 +17,9 @@ export class Text {
         const mainElement = document.createElement("p");
         mainElement.id = this.id;
         mainElement.style = this.style;
-        const textMain = document.createTextNode(this.text);
-        mainElement.appendChild(textMain);
+        const textToDoSo = `<u>${this.text}</u>`;
+        mainElement.innerHTML = textToDoSo;
         this.target.appendChild(mainElement);
         return mainElement;
-    }
+      }
 }

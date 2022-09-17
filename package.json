@@ -1,0 +1,22 @@
+{
+  "name": "indiajs",
+  "version": "1.0.0",
+  "description": "The JS framework built specially for India.",
+  "main": "India.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Learnr4Namish/IndiaJS.git"
+  },
+  "keywords": [
+    "JSFramework"
+  ],
+  "author": "Namish Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Learnr4Namish/IndiaJS/issues"
+  },
+  "homepage": "https://github.com/Learnr4Namish/IndiaJS#readme"
+}

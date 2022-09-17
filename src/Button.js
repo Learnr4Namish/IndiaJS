@@ -6,7 +6,6 @@ export class Button {
      text;
      style;
      id;
-     onClick
      create() {
         if(this.style === undefined || this.style.length < 1 || this.style === "") {
              this.style = `
@@ -18,9 +17,12 @@ export class Button {
                 color:white;
              `;
         }
-        this.target.innerHTML = `<button id="${this.id}" style="${this.style}" onclick="function onClick(){
-            ${this.onClick}
-        }">${this.text}</button>`;
-        return 0;
+        const mainElement = document.createElement("button");
+        mainElement.id = this.id;
+        mainElement.style = this.style;
+        const textMain = document.createTextNode(this.text);
+        mainElement.appendChild(textMain);
+        this.target.appendChild(mainElement);
+        return mainElement;
      }
 }
