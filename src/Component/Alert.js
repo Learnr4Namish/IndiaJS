@@ -1,5 +1,5 @@
 export class Alert {
-     showMessage(message) {
-         alert(message);
+     ShowMessage(Message) {
+         alert(Message);
      }
 }

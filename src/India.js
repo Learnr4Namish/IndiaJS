@@ -4,6 +4,11 @@ import { Text } from "./Text.js";
 import { Heading } from "./Heading.js";
 import { UnderlinedText } from "./TextStyle/UnderlinedText.js";
 import { Alert } from "./Component/Alert.js";
+import { BoldText } from "./TextStyle/BoldText.js";
+import { CenteredText } from "./TextStyle/CenteredText.js";
+import { UnderlinedHeading } from "./HeadingStyle/UnderlinedHeading.js";
+import { CenteredHeading } from "./HeadingStyle/CenteredHeading.js";
+import { LinkHandler } from "./Component/LinkHandler.js";
 export const India = {
      Widget: {
          Button: Button,
@@ -11,9 +16,13 @@ export const India = {
          Heading: Heading,
          TextStyle: {
              UnderlinedText: UnderlinedText,
-             
+             BoldText: BoldText,
+             CenteredText: CenteredText,
          },
-
+        HeadingStyle: {
+            UnderlinedHeading: UnderlinedHeading,
+            CenteredHeading: CenteredHeading,
+        },
      },
      Body: {
          get: function get() {
@@ -23,13 +32,14 @@ export const India = {
      
      Component: {
          Alert: Alert,
+         LinkHandler: LinkHandler,
      },
 
      Handler: {
          onClicked: function onClicked(element, clickFunction) {
-              element.onClick = function clicked() {
-                 clickFunction();
-              }
+              element.onclick = function() {
+                clickFunction()
+              };
          },
     }
 }
