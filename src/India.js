@@ -2,6 +2,7 @@
 import { Button } from "./Button.js"
 import { Text } from "./Text.js";
 import { Heading } from "./Heading.js";
+import { Image } from "./Image.js";
 import { UnderlinedText } from "./TextStyle/UnderlinedText.js";
 import { Alert } from "./Component/Alert.js";
 import { BoldText } from "./TextStyle/BoldText.js";
@@ -14,6 +15,7 @@ export const India = {
          Button: Button,
          Text: Text,
          Heading: Heading,
+         Image: Image,
          TextStyle: {
              UnderlinedText: UnderlinedText,
              BoldText: BoldText,
@@ -33,6 +35,7 @@ export const India = {
      Component: {
          Alert: Alert,
          LinkHandler: LinkHandler,
+         
      },
 
      Handler: {

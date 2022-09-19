@@ -1,6 +1,6 @@
 {
   "name": "indiajs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The JS framework built specially for India.",
   "main": "India.js",
   "scripts": {

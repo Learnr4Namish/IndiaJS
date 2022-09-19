@@ -23,6 +23,7 @@ export class Button {
         const textMain = document.createTextNode(this.text);
         mainElement.appendChild(textMain);
         this.target.appendChild(mainElement);
+        mainElement.style.transition = "0.3s";
         return mainElement;
      }
 }
