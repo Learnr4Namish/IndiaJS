@@ -23,6 +23,7 @@ MyBodyStyler.setBackgroundColor(India.Colors.DefaultColor);
 India.Body.get().style.color = "white";
 finalButton.style.backgroundColor = India.Colors.Black;
 India.Handler.onClicked(finalButton, function openNew() {
-     const MyLinkHandler = new India.Component.LinkHandler("https://github.com/Learnr4Namish/IndiaJS/blob/main/src/India.js", false);
+     const MyLinkHandler = new India.Component.LinkHandler("https://github.com/Learnr4Namish/IndiaJS/blob/main/src/SampleButton.js", false);
      MyLinkHandler.OpenLink();
 });
+MainAppBrand.id = "MainAppBrand";

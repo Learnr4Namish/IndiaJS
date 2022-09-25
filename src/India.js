@@ -16,6 +16,7 @@ import { DefaultColor } from "./Colors/DefaultColor.js";
 import { Black } from "./Colors/Black.js";
 import { WidgetStyler } from "./Component/WidgetStyler.js";
 import { White } from "./Colors/White.js";
+import { Box } from "./Box.js";
 export const India = {
     Colors: {
       DefaultColor: DefaultColor,
@@ -27,6 +28,7 @@ export const India = {
          Text: Text,
          Heading: Heading,
          Image: Image,
+         Box: Box,
          TextStyle: {
              UnderlinedText: UnderlinedText,
              BoldText: BoldText,
